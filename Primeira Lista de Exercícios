@@ -1,1 +1,99 @@
+CAPÍTULO 1 - A LINGUAGEM DA LÓGICA PROPOSICIONAL
 
+1. a) Não é uma fórmula válida.
+
+   b) É uma fórmula válida. 
+      (P ∧ Q) -> (Q <-> P ∨ ¬¬R)
+            
+   c) É uma fórmula válida.
+   
+   d) Não é uma fórmula válida.
+    
+   e) É uma fórmula válida.
+      (P ∧ Q) -> (Q <-> ¬R)
+      
+2. a) Sim, fórmulas que possuem somente um símbolo verdade ou que possuem somente um símbolo proposicinal.
+
+   b) O alfabeto da Lógica Proposicional possui 4 tipos de símbolos:
+        1. Símbolos de pontuação;
+        2. Símbolos proposicionais;
+        3. Símbolos de verdade;
+        4. Conectivos proposicionais.
+        
+   c) Não é possível existir, toda fórmula com algum conectivo possui um símbolo de pontuação mesmo ele sendo omitido.
+   
+3. a) ((¬¬P ∨ Q) <-> (P -> Q)) ∧ true
+        Comprimento:
+        comp[H] = comp[((¬¬P ∨ Q) <-> (P -> Q)) ∧ true]
+        comp[H] = comp[(¬¬P ∨ Q) <-> (P -> Q)] + 1 + comp[true]
+        comp[H] = comp[¬P] + 1 + 1 + comp[Q] + 1 + comp[P] + 1 + comp[Q] + 1 + comp[true]
+        comp[H] = comp[P] + 1 + 1 + 1 + comp[Q] + 1 + comp[P] + 1 + comp[Q] + 1 + comp[true]
+        comp[H] = 5 + 6 = 11
+        
+        Subfórmulas: 
+        {((¬¬P ∨ Q) <-> (P -> Q)) ∧ true, 
+        (¬¬P ∨ Q) <-> (P -> Q), 
+        true, 
+        ¬P, 
+        Q,
+        P}
+        
+   b) P -> ((Q -> R) -> ((P -> R) -> (P -> R)))
+        Comprimento:
+        comp[H] = comp[P -> ((Q -> R) -> ((P -> R) -> (P -> R)))]
+        comp[H] = comp[P] + 1 + comp[(Q -> R) -> ((P -> R) → (P -> R))]
+        comp[H] = comp[P] + 1 + comp[Q] + 1 + comp[R] + 1 + comp[(P -> R) -> (P -> R)]
+        comp[H] = comp[P] + 1 + comp[Q] + 1 + comp[R] + 1 + comp[P] + 1 + comp[R] + 1 + comp[P] + 1 + comp[R]
+        comp[H] = 7+6 = 13
+        
+        Subfórmulas: 
+        {P -> ((Q -> R) -> ((P -> R) -> (P -> R))),
+        P, 
+        (Q -> R) -> ((P -> R) -> (P -> R)),
+        Q, 
+        R, 
+        (P -> R) -> (P -> R)}
+        
+   c) ((P -> ¬P) <-> ¬P) ∨ Q
+        Comprimento:
+        comp[H] = comp[((P -> ¬P) <-> ¬P) ∨ Q]
+        comp[H] = comp[(P -> ¬P) <-> ¬P] + 1 + comp[Q]
+        comp[H] = comp[P -> ¬P] + 1 + comp[¬P] + 1 + comp[Q]
+        comp[H] = comp[P -> ¬P] + 1 + comp[P] + 1 + 1 + comp[Q]
+        comp[H] = comp[P] + 1 + comp[¬P] + 1 + comp[P] + 1 + 1 + comp[Q]
+        comp[H] = comp[P] + 1 + comp[P] + 1 + 1 + comp[P] + 1 + 1 + comp[Q]
+        comp[H] = 4+5 = 9
+         
+        Subfórmulas: 
+        {((P -> ¬P) <-> ¬P) ∨ Q, 
+        (P -> ¬P) <-> ¬P, 
+        Q, 
+        P -> ¬P, 
+        ¬P,
+        P}
+        
+   d) ¬(P -> ¬P)
+        Comprimento:
+        comp[H] = comp[¬(P -> ¬P)]
+        comp[H] = comp[P -> ¬P] + 1
+        comp[H] = comp[P] + 1 + comp[¬P] + 1 
+        comp[H] = comp[P] + 1 + comp[P] + 1 + 1
+        comp[H] = 2+3 = 5
+        
+        Subfórmulas:
+        {¬(P -> ¬P),
+        P -> ¬P,
+        P,
+        ¬P}
+        
+
+        
+          
+   
+        
+        
+
+
+      
+        
+      
