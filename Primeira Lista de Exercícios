@@ -86,14 +86,83 @@ CAPÍTULO 1 - A LINGUAGEM DA LÓGICA PROPOSICIONAL
         P,
         ¬P}
         
-
+4. a) ((¬(¬P)) <-> ((¬((¬(¬(P ∨ Q))) -> R)) ∧ P))
+        ¬¬P <-> (¬(¬¬(P ∨ Q)) -> R) ∧ P
+         
+   b) (¬P -> (Q ∨ R)) -> ((P ∧ Q) <-> (¬¬R ∨ ¬P))
+        Não há símbolos de pontuação a serem retirados.
+         
+   c) ((P ∨ Q) -> (P -> (¬Q)))
+        (P ∨ Q) -> (P -> ¬Q)
+         
+5. a) P ∨ ¬Q -> R <-> ¬R
+        (P ∨ ¬Q) -> R <-> ¬R
+        (P ∨ ¬Q) -> (R <-> ¬R)
+        (P ∨ (¬Q -> R <-> ¬R)
+        (P ∨ (¬Q -> R)) <-> ¬R
+        P ∨ (¬Q -> (R <-> ¬R))
+        P ∨ ¬(Q -> R <-> ¬R)
         
-          
+   b) Q -> ¬P ∧ Q
+         Q -> (¬P ∧ Q)
+         Q -> ¬(P ∧ Q)
+    
+   c) ¬P ∨ Q <-> Q
+         (¬P ∨ Q) <-> Q
+         ¬(P ∨ Q) <-> Q
+         ¬(P ∨ Q <-> Q)
+         
+   d) ¬¬P -> Q <-> P ∧ P¬¬R
+         Fórmula inválida.
+         
+6. a) Exercícios da questão 3:
+
+         a) ((¬¬P ∨ Q) <-> (P -> Q)) ∧ true
+               (∨¬¬PQ <-> ->PQ) ∧ true
+               <->∨¬¬PQ->PQ ∧ true
+               ∧<->∨¬¬PQ->PQtrue
+      
+         b) P -> ((Q -> R) -> ((P -> R) -> (P -> R)))
+               P -> ((Q -> R) -> (->PR -> ->PR))
+               P -> ((Q -> R) -> ->->PR->PR)
+               P -> (->QR -> ->->PR->PR)
+               P -> ->->QR->->PR->PR
+               ->P->->QR->->PR->PR
+
+         c) ((P -> ¬P) <-> ¬P) ∨ Q
+               (->P¬P <-> ¬P) ∨ Q
+               <->->P¬P¬P ∨ Q
+               ∨<->->P¬P¬PQ
+
+         d) ¬(P -> ¬P)
+               ->P¬P
+               ¬->P¬P
+         
+      Exercícios da questão 4:
    
-        
-        
+         a) ¬¬P <-> (¬(¬¬(P ∨ Q)) -> R) ∧ P
+               ¬¬P <-> (¬(¬¬∨PQ) -> R) ∧ P
+               ¬¬P <-> ¬->¬¬∨PQR ∧ P
+               ¬¬P <-> ∧¬->¬¬∨PQRP
+               <->∧¬->¬¬∨PQRP¬¬P
 
+         b) (¬P -> (Q ∨ R)) <-> ((P ∧ Q) <-> (¬¬R ∨ ¬P))
+               (¬P -> ∨QR) <-> (∧PQ <-> ∨¬¬R¬P)
+               ->¬P∨QR <-> <->∧PQ∨¬¬R¬P
+               <->->¬P∨QR<->∧PQ∨¬¬R¬P
 
-      
+         c) (P ∨ Q) -> (P -> ¬Q)
+               ∨PQ -> ->P¬Q
+               ->∨PQ->P¬Q
+               
+               ->∨PQ->P¬Q
+                ->∨PQ (P -> ¬Q)
+                ∨PQ -> (P -> ¬Q)
+                (P ∨ Q) -> (P -> ¬Q)
+                
         
-      
+   b) 1. ∨->PQ<->R->∨PQ¬S
+         ∨->PQ<->R->(P ∨ Q)¬S
+         ∨->PQ<->R((P ∨ Q) -> ¬S)
+         ∨->PQ<->R((P ∨ Q) -> ¬S)
+         ∨->PQ(((P ∨ Q) -> ¬S) <-> R)
