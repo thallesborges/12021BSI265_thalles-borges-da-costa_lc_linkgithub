@@ -134,52 +134,59 @@ CAPÍTULO 1 - A LINGUAGEM DA LÓGICA PROPOSICIONAL
          
 6. a) Exercícios da questão 3:
 
-         a) ((¬¬P ∨ Q) <-> (P -> Q)) ∧ true
-               (∨¬¬PQ <-> ->PQ) ∧ true
-               <->∨¬¬PQ->PQ ∧ true
-               ∧<->∨¬¬PQ->PQtrue
+         3.a) ((¬¬P ∨ Q) <-> (P -> Q)) ∧ true
+                  (∨¬¬PQ <-> ->PQ) ∧ true
+                  <->∨¬¬PQ->PQ ∧ true
+                  ∧<->∨¬¬PQ->PQtrue
       
-         b) P -> ((Q -> R) -> ((P -> R) -> (P -> R)))
-               P -> ((Q -> R) -> (->PR -> ->PR))
-               P -> ((Q -> R) -> ->->PR->PR)
-               P -> (->QR -> ->->PR->PR)
-               P -> ->->QR->->PR->PR
-               ->P->->QR->->PR->PR
+         3.b) P -> ((Q -> R) -> ((P -> R) -> (P -> R)))
+                  P -> ((Q -> R) -> (->PR -> ->PR))
+                  P -> ((Q -> R) -> ->->PR->PR)
+                  P -> (->QR -> ->->PR->PR)
+                  P -> ->->QR->->PR->PR
+                  ->P->->QR->->PR->PR
 
-         c) ((P -> ¬P) <-> ¬P) ∨ Q
-               (->P¬P <-> ¬P) ∨ Q
-               <->->P¬P¬P ∨ Q
-               ∨<->->P¬P¬PQ
+         3.c) ((P -> ¬P) <-> ¬P) ∨ Q
+                  (->P¬P <-> ¬P) ∨ Q
+                  <->->P¬P¬P ∨ Q
+                  ∨<->->P¬P¬PQ
 
-         d) ¬(P -> ¬P)
-               ->P¬P
-               ¬->P¬P
+         3.d) ¬(P -> ¬P)
+                  ->P¬P
+                  ¬->P¬P
          
       Exercícios da questão 4:
    
-         a) ¬¬P <-> (¬(¬¬(P ∨ Q)) -> R) ∧ P
-               ¬¬P <-> (¬(¬¬∨PQ) -> R) ∧ P
-               ¬¬P <-> ¬->¬¬∨PQR ∧ P
-               ¬¬P <-> ∧¬->¬¬∨PQRP
-               <->∧¬->¬¬∨PQRP¬¬P
+         4.a) ¬¬P <-> (¬(¬¬(P ∨ Q)) -> R) ∧ P
+                  ¬¬P <-> (¬(¬¬∨PQ) -> R) ∧ P
+                  ¬¬P <-> ¬->¬¬∨PQR ∧ P
+                  ¬¬P <-> ∧¬->¬¬∨PQRP
+                  <->∧¬->¬¬∨PQRP¬¬P
 
-         b) (¬P -> (Q ∨ R)) <-> ((P ∧ Q) <-> (¬¬R ∨ ¬P))
-               (¬P -> ∨QR) <-> (∧PQ <-> ∨¬¬R¬P)
-               ->¬P∨QR <-> <->∧PQ∨¬¬R¬P
-               <->->¬P∨QR<->∧PQ∨¬¬R¬P
+         4.b) (¬P -> (Q ∨ R)) <-> ((P ∧ Q) <-> (¬¬R ∨ ¬P))
+                  (¬P -> ∨QR) <-> (∧PQ <-> ∨¬¬R¬P)
+                  ->¬P∨QR <-> <->∧PQ∨¬¬R¬P
+                  <->->¬P∨QR<->∧PQ∨¬¬R¬P
 
-         c) (P ∨ Q) -> (P -> ¬Q)
-               ∨PQ -> ->P¬Q
-               ->∨PQ->P¬Q
-               
-               ->∨PQ->P¬Q
-                ->∨PQ (P -> ¬Q)
-                ∨PQ -> (P -> ¬Q)
-                (P ∨ Q) -> (P -> ¬Q)
-                
-        
+         4.c) (P ∨ Q) -> (P -> ¬Q)
+                  ∨PQ -> ->P¬Q
+                  ->∨PQ->P¬Q
+                   
    b) 1. ∨->PQ<->R->∨PQ¬S
-         ∨->PQ<->R->(P ∨ Q)¬S
-         ∨->PQ<->R((P ∨ Q) -> ¬S)
-         ∨->PQ<->R((P ∨ Q) -> ¬S)
-         ∨->PQ(((P ∨ Q) -> ¬S) <-> R)
+            Esta sequência de símbolos não é uma fórmula da Lógica Proposicional que utiliza a notação polonesa.
+      
+      2. -><->PQv->PQ->¬RR
+            (P <-> Q) -> ((P -> Q) ∨ (¬R -> R))
+         
+      3. ->¬P¬QR∨∨PQ∨¬R¬P
+            Esta sequência de símbolos não é uma fórmula da Lógica Proposicional que utiliza a notação polonesa.
+            
+      4. <->->¬P∨QR<->∧PQ∨¬¬R¬P
+            ???
+            Q ∨ R ((P ∧ Q) <-> (¬¬R ∨ ¬P))
+            
+7. a) Não é possível pois a única função da notação polonesa é remover os símbolos de pontuação, sendo impossível alterar o valor da fórmula.
+
+   b) 
+
+
