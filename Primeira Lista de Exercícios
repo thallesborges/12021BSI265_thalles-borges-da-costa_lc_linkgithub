@@ -53,49 +53,55 @@ CAPÍTULO 1 - A LINGUAGEM DA LÓGICA PROPOSICIONAL
            comp[H] = 7 + 6 = 13
            
         Subfórmulas:
-           {
-             P -> ((Q -> R) -> ((P -> R) -> (P -> R))),
-             P,
-             (Q -> R) -> ((P -> R) -> (P -> R)),
-             Q -> R,
-             (P -> R) -> (P -> R),
-             Q,
-             R,
-             P -> R
-            }
+        {
+         P -> ((Q -> R) -> ((P -> R) -> (P -> R))),
+         P,
+         (Q -> R) -> ((P -> R) -> (P -> R)),
+         Q -> R,
+         (P -> R) -> (P -> R),
+         Q,
+         R,
+         P -> R
+        }
       
         
    c) ((P -> ¬P) <-> ¬P) ∨ Q
+        
         Comprimento:
-        comp[H] = comp[((P -> ¬P) <-> ¬P) ∨ Q]
-        comp[H] = comp[(P -> ¬P) <-> ¬P] + 1 + comp[Q]
-        comp[H] = comp[P -> ¬P] + 1 + comp[¬P] + 1 + comp[Q]
-        comp[H] = comp[P -> ¬P] + 1 + comp[P] + 1 + 1 + comp[Q]
-        comp[H] = comp[P] + 1 + comp[¬P] + 1 + comp[P] + 1 + 1 + comp[Q]
-        comp[H] = comp[P] + 1 + comp[P] + 1 + 1 + comp[P] + 1 + 1 + comp[Q]
-        comp[H] = 4+5 = 9
+           comp[H] = comp[((P -> ¬P) <-> ¬P) ∨ Q]
+           comp[H] = comp[(P -> ¬P) <-> ¬P] + 1 + comp[Q]
+           comp[H] = comp[P -> ¬P] + 1 + comp[¬P] + 1 + comp[Q]
+           comp[H] = comp[P -> ¬P] + 1 + comp[P] + 1 + 1 + comp[Q]
+           comp[H] = comp[P] + 1 + comp[¬P] + 1 + comp[P] + 1 + 1 + comp[Q]
+           comp[H] = comp[P] + 1 + comp[P] + 1 + 1 + comp[P] + 1 + 1 + comp[Q]
+           comp[H] = 4 + 5 = 9
          
         Subfórmulas: 
-        {((P -> ¬P) <-> ¬P) ∨ Q, 
-        (P -> ¬P) <-> ¬P, 
-        Q, 
-        P -> ¬P, 
-        ¬P,
-        P}
+        {
+         ((P -> ¬P) <-> ¬P) ∨ Q, 
+         (P -> ¬P) <-> ¬P, 
+         Q, 
+         P -> ¬P, 
+         ¬P,
+         P
+        }
         
    d) ¬(P -> ¬P)
+        
         Comprimento:
-        comp[H] = comp[¬(P -> ¬P)]
-        comp[H] = comp[P -> ¬P] + 1
-        comp[H] = comp[P] + 1 + comp[¬P] + 1 
-        comp[H] = comp[P] + 1 + comp[P] + 1 + 1
-        comp[H] = 2+3 = 5
+           comp[H] = comp[¬(P -> ¬P)]
+           comp[H] = comp[P -> ¬P] + 1
+           comp[H] = comp[P] + 1 + comp[¬P] + 1 
+           comp[H] = comp[P] + 1 + comp[P] + 1 + 1
+           comp[H] = 2 + 3 = 5
         
         Subfórmulas:
-        {¬(P -> ¬P),
-        P -> ¬P,
-        P,
-        ¬P}
+        {
+         ¬(P -> ¬P),
+         P -> ¬P,
+         P,
+         ¬P
+        }
         
 4. a) ((¬(¬P)) <-> ((¬((¬(¬(P ∨ Q))) -> R)) ∧ P))
         ¬¬P <-> (¬(¬¬(P ∨ Q)) -> R) ∧ P
