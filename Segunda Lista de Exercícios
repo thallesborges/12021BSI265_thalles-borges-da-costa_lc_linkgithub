@@ -1,0 +1,30 @@
+Segunda Lista de Exercícios: lc_lista-exercicios_02.pdf
+
+1. Sejam A e B fórmulas. Classifique as afirmações a seguir em verdadeiras ou falsas, justificando sua resposta.
+
+  a) Se A é satisfatível, então ¬A é satisfatível
+  
+    R: Falso, pois se A é satisfatível significa que A = T, se A = T então ¬A = F, uma fórmula F não é satisfatível. 
+    
+  b) A é tautologia se ¬A é contraditória
+  
+    R: Verdadeiro, pois se ¬A = F => A = T.
+    
+  c) A é tautologia se A é satisfatível
+  
+    R: 
+  
+  d) Se A é contraditória, então ¬A é satisfatível
+  
+    R:
+  
+  e) Se A |= B e A é tautologia implica que B é tautologia
+  
+    R:
+    
+  f) Se A |= B e B é tautologia implica que A é tautologia
+  
+    R: 
+
+  
+  
