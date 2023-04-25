@@ -12,19 +12,20 @@ Segunda Lista de Exercícios: lc_lista-exercicios_02.pdf
     
   c) A é tautologia se A é satisfatível
   
-    R: 
+    R: Falso pois sendo satisfatível pode haver sentenças falsas na fórmula, possuindo falso não tem como ser tautologia.
   
   d) Se A é contraditória, então ¬A é satisfatível
   
-    R:
+    R: Verdadeiro pois A = F => ¬A = T => Satisfatível 
   
   e) Se A |= B e A é tautologia implica que B é tautologia
   
-    R:
+    R: Verdadeiro pois se A é tautologia e implica semânticamente em B quer dizer que ambos só possuem valores iguais.
     
   f) Se A |= B e B é tautologia implica que A é tautologia
   
-    R: 
+    R: Falso, porque não necessariamente se B for tautologia A será também pois A está implicando em B. A pode ter apenas 1 true e continuará implicando
+       semânticamente em B e não será tautologia.
 
-  
+2. 
   
